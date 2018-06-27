@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  MyMusicPlayer
+//  GitFlow
 //
-//  Created by yagom
-//  Copyright © 2017년 yagom. All rights reserved.
+//  Created by caution
+//  Copyright © 2018년 caution. All rights reserved.
 //
 
 import UIKit
@@ -32,7 +32,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     func initializePlayer() {
         
         guard let soundAsset: NSDataAsset = NSDataAsset(name: "sound") else {
-            print("음원 파일 에셋을 가져올 수 없습니다")
+            print("음원 파일 에셋을 가져올 수 없습니다.")
             return
         }
         
@@ -40,7 +40,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             try self.player = AVAudioPlayer(data: soundAsset.data)
             self.player.delegate = self
         } catch let error as NSError {
-            print("플레이어 초기화 실패")
+            print("플레이어 초기화 실패 ㅠㅠ")
             print("코드 : \(error.code), 메세지 : \(error.localizedDescription)")
         }
         
