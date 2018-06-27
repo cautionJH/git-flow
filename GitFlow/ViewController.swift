@@ -55,7 +55,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         let milisecond: Int = Int(time.truncatingRemainder(dividingBy: 1) * 100)
         
         let timeText: String = String(format: "%02ld분%02ld초%02ld", minute, second, milisecond)
-        
         self.timeLabel.text = timeText
     }
     
@@ -221,6 +220,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         self.updateTimeLabelText(time: 0)
         self.invalidateTimer()
     }
-    
+    // 빨리감기 기능 추가
 }
 
