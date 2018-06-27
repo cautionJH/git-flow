@@ -30,7 +30,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     // MARK: - Methods
     // MARK: Custom Method
     func initializePlayer() {
-        
+        // hotfix!!!!!!!!!!!!!!!!!!!!!!!!
         guard let soundAsset: NSDataAsset = NSDataAsset(name: "sound") else {
             print("음원 파일 에셋을 가져올 수 없습니다.")
             return
