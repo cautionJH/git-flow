@@ -12,6 +12,7 @@ import AVFoundation
 class ViewController: UIViewController, AVAudioPlayerDelegate {
     // REWARD
     // EDIT
+    // SQUASH
     // MARK:- Properties
     var player: AVAudioPlayer!
     var timer: Timer!
